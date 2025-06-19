@@ -1,0 +1,84 @@
+ body {
+    background-color: #1a202c; /* Dark background */
+    font-family: 'Inter', sans-serif; /* Modern font */
+    color: #e2e8f0; /* Light grey text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.terminal-container {
+    background-color: #2d3748; /* Darker grey for terminal */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    width: 100%;
+    max-width: 960px; /* Max width for larger screens */
+    height: 70vh; /* Fixed height for terminal output area */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure content stays within bounds */
+}
+
+#cli-output {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto; /* Scroll for terminal output */
+    white-space: pre-wrap; /* Preserve whitespace and wrap text */
+    word-break: break-all; /* Break long words */
+    font-family: 'monospace', monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #e2e8f0; /* Light grey text */
+}
+
+#cli-output p {
+    margin: 0;
+    padding: 0;
+}
+
+.cli-input-line {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: #1a202c; /* Input background */
+    border-top: 1px solid #4a5568; /* Separator line */
+}
+
+#cli-prompt {
+    color: #48bb78; /* Green for prompt user@host */
+    margin-right: 0.5rem;
+    font-family: 'monospace', monospace;
+    font-size: 0.9rem;
+}
+
+#cli-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #e2e8f0; /* Input text color */
+    flex-grow: 1;
+    font-family: 'monospace', monospace;
+    font-size: 0.9rem;
+}
+
+#cli-output::-webkit-scrollbar {
+    width: 8px;
+}
+
+#cli-output::-webkit-scrollbar-track {
+    background: #2d3748;
+    border-radius: 10px;
+}
+
+#cli-output::-webkit-scrollbar-thumb {
+    background: #4a5568;
+    border-radius: 10px;
+}
+
+#cli-output::-webkit-scrollbar-thumb:hover {
+    background: #6a768f;
+}
