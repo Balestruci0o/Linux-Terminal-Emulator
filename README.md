@@ -3,6 +3,8 @@ A simple Linux terminal emulator built with JavaScript, HTML, and CSS.
 
 This project aims to simulate a basic Linux shell environment in the browser and is intended primarily for educational and demonstration purposes.
 
+🔗 **[Live Demo](https://balestruci0o.github.io/Linux-Terminal-Emulator/)**  
+
 ## ✨ Features
 Command-line interface with basic command support
 
